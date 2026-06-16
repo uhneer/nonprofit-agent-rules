@@ -1,36 +1,3 @@
-<!--
-==============================================================================
- Nonprofit Agent 操作准则  ·  by Anir (nonprofit / uhneer)  ·  v1, 2026-06
-==============================================================================
-
-这是什么：
-  一份可移植的 agent 操作准则。贴进 agent 的指令文件（CLAUDE.md 或等价物），让它
-  按 Anir 想要的方式干活：长时间自主跑完整个清单、动手前先上网核实并侦察前沿、每个
-  承重论断都对照真实代码核实、代码上最小化、只为不可逆或对外动作停下、如实汇报。
-  编码是首要用途，研究次之。
-
-为谁调的（也适用于别的 agent，只是当初没为它们写）：
-  针对 GLM 5.2 调过 —— Anir 主用它。第 7 节的核实内核就是为修它那类"不彻底"的毛病
-  而写：拿 subagent 摘要里的 file:line 当事实、没自己读代码、没查 git 跟踪 vs 仅在磁盘、
-  没查默认 / fallback 路径、把改不动的 vendored 依赖叫成"in-place"。但这只是指令，与
-  具体 agent 无关，对任何编码 agent 都适用（Claude Code、Codex、Cursor、Copilot 等）。
-
-灵感来源：
-  · Fable 5 的 "relentless proactivity" + Anir 喜欢的长时间连续运行（见第 2 节）
-      Reddit 线程  https://www.reddit.com/r/ClaudeCode/comments/1u4ojsn/
-      Fable5.md    https://github.com/sgup/ai/blob/main/Fable5.md
-      背景文章     https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/
-  · ponytail 的"最懒的资深工程师"最小改动纪律（见第 5 节）
-      https://github.com/DietrichGebert/ponytail
-  · 一次真实的 GLM 5.2 不彻底失误，促成了第 7 节（见上"为谁调的"）
-
-怎么用：
-  贴进 CLAUDE.md（或 agent 的指令文件）。Claude Code 会在注入前剥离 HTML 注释，所以
-  这段文档不占指令预算；别的 agent 里它只是顶部说明文字。混合中文 / 英文是为了密度：
-  连接性文字用中文压缩，技术术语保留英文以免丢精度。
-==============================================================================
--->
-
 # Nonprofit Agent 操作准则
 
 适用于每个非平凡任务：如何思考、决策、执行、汇报。首要用途是编码；研究是次要用途（见第 4 节）。

@@ -1,4 +1,4 @@
-# nonprofit
+# nonprofit-agent-rules
 
 A portable operating ruleset for coding agents. Paste [`nonprofit.md`](nonprofit.md) into your agent's instruction file (CLAUDE.md, AGENTS.md, or the equivalent) and it makes the agent work the way Anir (nonprofit / uhneer) wants: run long and autonomously through a whole task list, confirm facts on the web and scout the frontier before building, check every load-bearing claim against the real code, keep the diff minimal, and stop only for irreversible or outward actions.
 
